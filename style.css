@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.body {
+    width: 100%;
+    height: 130vh;
+    background-color: hsl(241deg 32% 46%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 90%;
+}
+.container .header {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container .header img {
+    width: 50px;
+    margin-left: 15px;
+}
+.container .header-p {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+.container .text-content {
+    display: flex;
+}
+.container .text-content article:first-child {
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 43px 38px;
+}
+.container .text-content article:first-child img {
+    width: 20px;
+}
+.container .text-content article:first-child h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.container .text-content article:first-child p {
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    font-size: 12px;
+}
+.container .text-content article:first-child p:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(214deg 32% 91%);
+}
+.container .text-content article:first-child .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .text-content article:first-child .price h1{
+    font-size: 50px;
+    margin-left: 15px;
+    position: relative;
+}
+.container .text-content article:first-child .price h1::before{
+    content: "$";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: 22px;
+}
+.container .text-content article:first-child .price h1::after{
+    content: "USD";
+    position: absolute;
+    bottom: 0;
+    right: -38px;
+    font-size: 19px;
+}
+.container .text-content article:first-child .price button{
+   padding: 15px 23px;
+   border: none;
+   background-color: #e5af40;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 4px;
+   color: white;
+}
+.container .text-content article:first-child p:last-of-type span {
+    font-weight: bold;
+}
+.container .text-content article:last-child {
+    width: 400px;
+    align-self: center;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    padding: 50px 40px;
+}
+.container .text-content article:last-child header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container .text-content article:last-child header img {
+    width: 30px;
+    margin-right: 10px;
+}
+.container .text-content article:last-child p {
+    font-size: 13px;
+    position: relative;
+    padding: 10px;
+}
+.container .text-content article:last-child p:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(218 218 218);
+    bottom: 0;
+}
+.container .text-content article:last-child .price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .text-content article:last-child .price h1 {
+    font-size: 50px;
+    position: relative;
+}
+.container .text-content article:last-child .price h1::before {
+    content: "$";
+    position: absolute;
+    left: -14px;
+    top: 1px;
+    font-size: 20px;
+    font-weight: normal
+}
+.container .text-content article:last-child .price h1::after {
+    content: "USD";
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.container .text-content article:last-child .price button {
+    padding: 15px 23px;
+    border: none;
+    background-color: #e5af40;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+}
